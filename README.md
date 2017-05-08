@@ -48,19 +48,19 @@ $ brew install python
 
 ### Step 2 - Install required Python libraries:
 
-**[argparse](https://docs.python.org/3/library/argparse.html)** (default) - Accepts arguments from command-line
-**[csv](https://docs.python.org/3/library/csv.html)** (default) - Writes results to CSV file
-**[requests](http://docs.python-requests.org/en/master/)** - Performs API requests
-**[urllib3](https://urllib3.readthedocs.io/en/latest/)** - Dependency for **requests** library SSL connection
-**[numpy](http://www.numpy.org/)** - Performs weighted average calculation
+* **[argparse](https://docs.python.org/3/library/argparse.html)** (default) - Accepts arguments from command-line
+* **[csv](https://docs.python.org/3/library/csv.html)** (default) - Writes results to CSV file
+* **[requests](http://docs.python-requests.org/en/master/)** - Performs API requests
+* **[urllib3](https://urllib3.readthedocs.io/en/latest/)** - Dependency for **requests** library SSL connection
+* **[numpy](http://www.numpy.org/)** - Performs weighted average calculation
 
 The **[argparse](https://docs.python.org/3/library/argparse.html)** and **[csv](https://docs.python.org/3/library/csv.html)** libraries should be installed by default.
 
 The following additional libraries will likely need to be installed using `pip install`:
 
-**[requests](http://docs.python-requests.org/en/master/)**
-SSL Dependency: **[urllib3](https://urllib3.readthedocs.io/en/latest/)** 
-**[numpy](http://www.numpy.org/)**
+* **[requests](http://docs.python-requests.org/en/master/)**
+* SSL Dependency: **[urllib3](https://urllib3.readthedocs.io/en/latest/)**
+* **[numpy](http://www.numpy.org/)**
 
 ```
 $ pip install requests, urllib3, numpy
