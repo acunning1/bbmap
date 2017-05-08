@@ -1,12 +1,18 @@
 # bbmap - Broadbandmap.gov API exercise
 
-## About
+**[About](https://github.com/acunning1/bbmap#about)**
+**[Installation](https://github.com/acunning1/bbmap#installation)**
+**[Usage](https://github.com/acunning1/bbmap#usage)**
+**[Assumptions](https://github.com/acunning1/bbmap#assumptions)**
 
-A command-line utility written in Python that retrieves demographic data for a specified set of U.S. states from a public API and outputs that data in the requested format.
+## About
+>Author: Andy Cunningham, 5/8/17
+
+A CLI utility written in Python to retrieve demographic data for a specified set of U.S. states from a public API and outputs that data in a specified format.
 
 ## Installation
 
->to do
+
 
 ## Usage
 
