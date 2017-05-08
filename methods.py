@@ -1,4 +1,4 @@
-# bbmap.py
+# methods.py for bbmap.py
 # Broadbandmap.gov API requester
 #
 # Created by Andy Cunningham

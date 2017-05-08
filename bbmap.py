@@ -1,5 +1,5 @@
 # bbmap.py
-# Broadbandmap.gov API requester
+# Broadbandmap.gov API exercise
 #
 # Created by Andy Cunningham
 # 5/8/17
