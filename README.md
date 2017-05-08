@@ -10,23 +10,19 @@ A CLI utility written in Python to retrieve demographic data for a specified set
 - **[Assumptions](https://github.com/acunning1/bbmap#assumptions)**
 
 ## Requirements:
-- Python 2.7.x
+- Python 2.7.x: https://www.python.org/
 - Python libraries:
-    - `argparse` (default)
-    - `csv` (default)
-    - `requests`
-      - `urllib3`
-    - `numpy`
+    - **[argparse](https://docs.python.org/3/library/argparse.html)** (default)
+    - **[csv](https://docs.python.org/3/library/csv.html)** (default)
+    - **[requests](http://docs.python-requests.org/en/master/)**
+      - **[urllib3](https://urllib3.readthedocs.io/en/latest/)**
+    - **[numpy](http://www.numpy.org/)**
 
 ## Installation
 
-**Step 1 - Verify Python installation requirement**:
+###Step 1 - Verify Python installation requirement:
 
 **Python 2.7.x**
-
-Input:
-- `python`
-- `exit()`, CTRL+D
 
 ```
 $ python
@@ -40,27 +36,26 @@ If no Python (or old version) is found, [install/update](http://docs.python-guid
 
 For example, using **[homebrew](https://brew.sh/)**:
 
-Input:
-- `brew install python`
-
 ```
 $ brew install python
 ```
 
->`!` Note: Once Python has been updated or installed, you may need to log out and back in for path changes to take effect
+>`!` Note: Once Python has been installed or updated, you may need to log out and back in for changes to take effect
 
-**Step 2 - Install required Python libraries**:
+###Step 2 - Install required Python libraries:
 
 Python libraries:
-  - `argparse` (default)
-  - `csv` (default)
-  - `requests`
-    - `urllib3`
-  - `numpy`
+    - **[argparse](https://docs.python.org/3/library/argparse.html)** (default)
+    - **[csv](https://docs.python.org/3/library/csv.html)** (default)
+    - **[requests](http://docs.python-requests.org/en/master/)**
+      - **[urllib3](https://urllib3.readthedocs.io/en/latest/)**
+    - **[numpy](http://www.numpy.org/)**
 
 The **[argparse](https://docs.python.org/3/library/argparse.html)** and **[csv](https://docs.python.org/3/library/csv.html)** libraries should be installed by default.
 
 The following additional libraries will likely need to be installed using `pip install`:
+
+>`!` Note: If `pip install` fails, follow instructions for [installing/updating](http://docs.python-guide.org/en/latest/starting/installation/) Python above.
 
 - `requests`
 - `urllib3` (dependency for `requests`)
@@ -70,11 +65,15 @@ The following additional libraries will likely need to be installed using `pip i
 $ pip install requests, urllib3, numpy
 ```
 
-**Step 3 - Clone or download repository**
+###Step 3 - Clone or download repository
+
+For detailed instructions, refer to GitHub documentation:
+
+https://help.github.com/articles/cloning-a-repository/
 
 ## Usage
 
-From the command-line utility of your choise while in the project directory, input the following...
+From the command-line while in the project directory, input the following...
 
 **For help or instructions**:
 
