@@ -83,6 +83,33 @@ https://help.github.com/articles/cloning-a-repository/
 
 From the command-line while in the project directory, input the following...
 
+### Troubleshooting:
+
+**1) ImportError: No Module named requests**
+
+Verify `PYTHONPATH` is properly pointing to where pip has installed the **requests** package
+
+Quick fix:
+
+```
+$ export PYTHONPATH="${PYTHONPATH}/usr/local/lib/python2.7/site-packages:/usr/lib/python2.7/site-packages"
+```
+
+**2) SNIMissingWarning; InsecurePlatformWarning**
+
+See related `urllib3` documentation:
+http://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+
+**3) python importerror dlopen symbol not found**
+
+Possible issue due to installing Python using `brew`.
+
+Quick fix:
+
+```
+brew unlink python && brew link python
+```
+
 **For help or instructions**:
 
 ```
@@ -117,31 +144,4 @@ bbmap $ python bbmap.py <state1>,<state2>,<state3> -c
 
 ```
 bbmap $ python bbmap.py <state1>,<state2>,<state3> --csv
-```
-
-### Troubleshooting:
-
-**1) ImportError: No Module named requests**
-
-Verify `PYTHONPATH` is properly pointing to where pip has installed the **requests** package
-
-Quick fix:
-
-```
-$ export PYTHONPATH="${PYTHONPATH}/usr/local/lib/python2.7/site-packages:/usr/lib/python2.7/site-packages"
-```
-
-**2) SNIMissingWarning; InsecurePlatformWarning**
-
-See related `urllib3` documentation:
-http://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
-
-**3) python importerror dlopen symbol not found**
-
-Possible issue due to installing Python using `brew`.
-
-Quick fix:
-
-```
-brew unlink python && brew link python
 ```
