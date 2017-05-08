@@ -55,7 +55,7 @@ The following additional libraries will likely need to be installed using `pip i
 * **[numpy](http://www.numpy.org/)**
 
 ```
-$ pip install requests, urllib3, numpy
+$ pip install requests urllib3 numpy
 ```
 
 >`!` Note: If `pip install` fails, follow instructions for [installing/updating](http://docs.python-guide.org/en/latest/starting/installation/) Python above.
@@ -63,7 +63,7 @@ $ pip install requests, urllib3, numpy
 If needed, you can confirm installation status and versions of these libraries using `pip show`:
 
 ```
-$ pip show requests, urllib3, numpy
+$ pip show requests urllib3 numpy
 ```
 
 ### Step 3 - Clone or download repository
@@ -129,8 +129,17 @@ $ export PYTHONPATH="${PYTHONPATH}/usr/local/lib/python2.7/site-packages:/usr/li
 See related `urllib3` documentation:
 http://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
 
+**3) python importerror dlopen symbol not found**
+
+Possible issue due to installing Python using `brew`.
+
+Quick fix:
+
+```
+brew unlink python && brew link python
+```
+
 ## Assumptions
-- User is expected to be running on macOS X
 - Exercise permits use of a math lib for weighted average calculation
 - Weighted average uses number of households as weights rather than population
 - User is familiar enough with CLI operation to encapsulate input of states with whitespaces in quotations, i.e. 'new york'
