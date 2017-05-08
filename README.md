@@ -1,14 +1,14 @@
 # bbmap - Broadbandmap.gov API exercise
 
-### About
+## About
 
 A command-line utility written in Python that retrieves demographic data for a specified set of U.S. states from a public API and outputs that data in the requested format.
 
-### Installation
+## Installation
 
 >to do
 
-### Usage
+## Usage
 
 From the command-line while in the project directory, input the following...
 
@@ -48,7 +48,7 @@ bbmap $ python bbmap.py <state1>,<state2>,<state3> -c
 bbmap $ python bbmap.py <state1>,<state2>,<state3> --csv
 ```
 
-### Assumptions
+## Assumptions
 - Exercise permits use of a math lib for weighted average calculation
 - Weighted average uses number of households as weights rather than population
 - User is familiar enough with CLI operation to encapsulate input of states with whitespaces in quotations, i.e. 'new york'
