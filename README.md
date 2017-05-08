@@ -20,7 +20,7 @@ A CLI utility written in Python to retrieve demographic data for a specified set
 
 ## Installation
 
-###Step 1 - Verify Python installation requirement:
+### Step 1 - Verify Python installation requirement:
 
 **Python 2.7.x**
 
@@ -42,7 +42,7 @@ $ brew install python
 
 >`!` Note: Once Python has been installed or updated, you may need to log out and back in for changes to take effect
 
-###Step 2 - Install required Python libraries:
+### Step 2 - Install required Python libraries:
 
 Python libraries:
     - **[argparse](https://docs.python.org/3/library/argparse.html)** (default)
@@ -65,7 +65,7 @@ The following additional libraries will likely need to be installed using `pip i
 $ pip install requests, urllib3, numpy
 ```
 
-###Step 3 - Clone or download repository
+### Step 3 - Clone or download repository
 
 For detailed instructions, refer to GitHub documentation:
 
