@@ -2,7 +2,7 @@
 
 **Author**: Andy Cunningham - 5/8/17
 
-A CLI utility written in Python to retrieve demographic data for a specified set of U.S. states from a public API and outputs that data in a specified format.
+A CLI utility written in Python to retrieve demographic data for a specified set of U.S. states from a public API and output that data in a specified format.
 
 - **[Requirements](https://github.com/acunning1/bbmap#requirements)**
 - **[Installation](https://github.com/acunning1/bbmap#installation)**
@@ -44,23 +44,22 @@ For example, using **[homebrew](https://brew.sh/)**:
 $ brew install python
 ```
 
->`!` Note: Once Python has been installed or updated, you may need to log out and back in for changes to take effect
+>`!` Note: Once Python has been installed or updated, you may need to log out and back in for changes to `PYTHONPATH` to take effect
 
 ### Step 2 - Install required Python libraries:
 
-Python libraries:
-    - **[argparse](https://docs.python.org/3/library/argparse.html)** (default)
-    - **[csv](https://docs.python.org/3/library/csv.html)** (default)
-    - **[requests](http://docs.python-requests.org/en/master/)**
-      - **[urllib3](https://urllib3.readthedocs.io/en/latest/)**
-    - **[numpy](http://www.numpy.org/)**
+**[argparse](https://docs.python.org/3/library/argparse.html)** (default) - Accepts arguments from command-line
+**[csv](https://docs.python.org/3/library/csv.html)** (default) - Writes results to CSV file
+**[requests](http://docs.python-requests.org/en/master/)** - Performs API requests
+**[urllib3](https://urllib3.readthedocs.io/en/latest/)** - Dependency for **requests** library SSL connection
+**[numpy](http://www.numpy.org/)** - Performs weighted average calculation
 
 The **[argparse](https://docs.python.org/3/library/argparse.html)** and **[csv](https://docs.python.org/3/library/csv.html)** libraries should be installed by default.
 
 The following additional libraries will likely need to be installed using `pip install`:
 
 **[requests](http://docs.python-requests.org/en/master/)**
-  - Dependency: **[urllib3](https://urllib3.readthedocs.io/en/latest/)**
+SSL Dependency: **[urllib3](https://urllib3.readthedocs.io/en/latest/)**
 **[numpy](http://www.numpy.org/)**
 
 ```
@@ -68,6 +67,12 @@ $ pip install requests, urllib3, numpy
 ```
 
 >`!` Note: If `pip install` fails, follow instructions for [installing/updating](http://docs.python-guide.org/en/latest/starting/installation/) Python above.
+
+If needed, you can confirm installation status and versions of these libraries using `pip show`:
+
+```
+$ pip show requests, urllib3, numpy
+```
 
 ### Step 3 - Clone or download repository
 
@@ -114,6 +119,23 @@ bbmap $ python bbmap.py <state1>,<state2>,<state3> -c
 ```
 bbmap $ python bbmap.py <state1>,<state2>,<state3> --csv
 ```
+
+### Troubleshooting:
+
+**1) ImportError: No Module named requests**
+
+Verify PYTHONPATH is properly pointing to where pip has installed the `requests` package
+
+Quick fix:
+
+```
+$ export PYTHONPATH="${PYTHONPATH}/usr/local/lib/python2.7/site-packages:/usr/lib/python2.7/site-packages"
+```
+
+**2) SNIMissingWarning; InsecurePlatformWarning**
+
+See related `urllib3` documentation:
+http://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
 
 ## Assumptions
 - User is expected to be running on macOS X
