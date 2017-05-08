@@ -1,2 +1,5 @@
 # Ignore CSVs
 *.csv
+
+# Ignore compiled files
+*.pyc
