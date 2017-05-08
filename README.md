@@ -59,7 +59,7 @@ The **[argparse](https://docs.python.org/3/library/argparse.html)** and **[csv](
 The following additional libraries will likely need to be installed using `pip install`:
 
 **[requests](http://docs.python-requests.org/en/master/)**
-SSL Dependency: **[urllib3](https://urllib3.readthedocs.io/en/latest/)**
+SSL Dependency: **[urllib3](https://urllib3.readthedocs.io/en/latest/)** 
 **[numpy](http://www.numpy.org/)**
 
 ```
@@ -124,7 +124,7 @@ bbmap $ python bbmap.py <state1>,<state2>,<state3> --csv
 
 **1) ImportError: No Module named requests**
 
-Verify PYTHONPATH is properly pointing to where pip has installed the `requests` package
+Verify `PYTHONPATH` is properly pointing to where pip has installed the **requests** package
 
 Quick fix:
 
