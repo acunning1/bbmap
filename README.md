@@ -36,15 +36,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
 
-If no Python (or old version) is found, [install/update](http://docs.python-guide.org/en/latest/starting/installation/) using package manager of choice:
-
-For example, using **[homebrew](https://brew.sh/)**:
-
-```
-$ brew install python
-```
-
->`!` Note: Once Python has been installed or updated, you may need to log out and back in for changes to `PYTHONPATH` to take effect
+If no Python (or old version) is found, [install/update](https://www.python.org/downloads/mac-osx/) using the Python installer at https://www.python.org/download/mac-ox/.
 
 ### Step 2 - Install required Python libraries:
 
