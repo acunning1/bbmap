@@ -1,9 +1,9 @@
 # bbmap - Broadbandmap.gov API exercise
 
-**[About](https://github.com/acunning1/bbmap#about)**
-**[Installation](https://github.com/acunning1/bbmap#installation)**
-**[Usage](https://github.com/acunning1/bbmap#usage)**
-**[Assumptions](https://github.com/acunning1/bbmap#assumptions)**
+- **[About](https://github.com/acunning1/bbmap#about)**
+- **[Installation](https://github.com/acunning1/bbmap#installation)**
+- **[Usage](https://github.com/acunning1/bbmap#usage)**
+- **[Assumptions](https://github.com/acunning1/bbmap#assumptions)**
 
 ## About
 >Author: Andy Cunningham, 5/8/17
