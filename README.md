@@ -4,10 +4,17 @@
 
 A CLI utility written in Python to retrieve demographic data for a specified set of U.S. states from a public API and output that data in a specified format.
 
+- **[Assumptions](https://github.com/acunning1/bbmap#assumptions)**
 - **[Requirements](https://github.com/acunning1/bbmap#requirements)**
 - **[Installation](https://github.com/acunning1/bbmap#installation)**
 - **[Usage](https://github.com/acunning1/bbmap#usage)**
-- **[Assumptions](https://github.com/acunning1/bbmap#assumptions)**
+
+## Assumptions
+- Exercise permits use of a math lib for weighted average calculation
+- Weighted average uses number of households as weights rather than population
+- User is familiar enough with CLI operation to encapsulate input of states with whitespaces in quotations, i.e. 'new york'
+- Weighted average should be displayed as a percentage float, rather than 0 integer
+- Additional text regarding output to improve clarity/usability is desired
 
 ## Requirements:
 - Python 2.7.x: https://www.python.org/
@@ -138,10 +145,3 @@ Quick fix:
 ```
 brew unlink python && brew link python
 ```
-
-## Assumptions
-- Exercise permits use of a math lib for weighted average calculation
-- Weighted average uses number of households as weights rather than population
-- User is familiar enough with CLI operation to encapsulate input of states with whitespaces in quotations, i.e. 'new york'
-- Weighted average should be displayed as a percentage float, rather than 0 integer
-- Additional text regarding output to improve clarity/usability is desired
