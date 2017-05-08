@@ -20,6 +20,10 @@ A CLI utility written in Python to retrieve demographic data for a specified set
 
 ## Installation
 
+- **[Step 1 - Verify Python installation requirement](https://github.com/acunning1/bbmap#step-1---verify-python-installation-requirement)**
+- **[Step 2 - Install required Python libraries]https://github.com/acunning1/bbmap#step-2---install-required-python-libraries**
+- **[Step 3 - Clone or download repository](https://github.com/acunning1/bbmap#step-3---clone-or-download-repository)**
+
 ### Step 1 - Verify Python installation requirement:
 
 **Python 2.7.x**
@@ -55,15 +59,15 @@ The **[argparse](https://docs.python.org/3/library/argparse.html)** and **[csv](
 
 The following additional libraries will likely need to be installed using `pip install`:
 
->`!` Note: If `pip install` fails, follow instructions for [installing/updating](http://docs.python-guide.org/en/latest/starting/installation/) Python above.
-
-- `requests`
-- `urllib3` (dependency for `requests`)
-- `numpy`
+**[requests](http://docs.python-requests.org/en/master/)**
+  - Dependency: **[urllib3](https://urllib3.readthedocs.io/en/latest/)**
+**[numpy](http://www.numpy.org/)**
 
 ```
 $ pip install requests, urllib3, numpy
 ```
+
+>`!` Note: If `pip install` fails, follow instructions for [installing/updating](http://docs.python-guide.org/en/latest/starting/installation/) Python above.
 
 ### Step 3 - Clone or download repository
 
