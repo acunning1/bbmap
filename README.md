@@ -30,6 +30,7 @@ A CLI utility written in Python to retrieve demographic data for a specified set
 - **[Step 1 - Verify Python installation requirement](https://github.com/acunning1/bbmap#step-1---verify-python-installation-requirement)**
 - **[Step 2 - Install required Python libraries](https://github.com/acunning1/bbmap#step-2---install-required-python-libraries)**
 - **[Step 3 - Clone or download repository](https://github.com/acunning1/bbmap#step-3---clone-or-download-repository)**
+- **[Troubleshooting](https://github.com/acunning1/bbmap#troubleshooting)**
 
 ### Step 1 - Verify Python installation requirement:
 
@@ -79,10 +80,6 @@ For detailed instructions, refer to GitHub documentation:
 
 https://help.github.com/articles/cloning-a-repository/
 
-## Usage
-
-From the command-line while in the project directory, input the following...
-
 ### Troubleshooting:
 
 **1) ImportError: No Module named requests**
@@ -109,6 +106,10 @@ Quick fix:
 ```
 brew unlink python && brew link python
 ```
+
+## Usage
+
+From the command-line while in the project directory, input the following...
 
 **For help or instructions**:
 
