@@ -1,11 +1,11 @@
 # bbmap
-Broadbandmap.gov API exercise
+## Broadbandmap.gov API exercise
 
-Installation
+## Installation
 
-Usage
+## Usage
 
-Assumptions
+## Assumptions
 - Exercise permits use of math lib for weighted average calculation
 - Weighted average uses households as weights rather than population
 - User is familiar enough with cli input to encapsulate states with whitespaces in quotations, i.e. 'new york'
