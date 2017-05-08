@@ -82,7 +82,7 @@ https://help.github.com/articles/cloning-a-repository/
 
 ### Troubleshooting:
 
-**1) ImportError: No Module named requests**
+1) `ImportError: No Module named requests`
 
 Verify `PYTHONPATH` is properly pointing to where pip has installed the **requests** package
 
@@ -92,12 +92,12 @@ Quick fix:
 $ export PYTHONPATH="${PYTHONPATH}/usr/local/lib/python2.7/site-packages:/usr/lib/python2.7/site-packages"
 ```
 
-**2) SNIMissingWarning; InsecurePlatformWarning**
+2) `SNIMissingWarning`; `InsecurePlatformWarning`
 
 See related `urllib3` documentation:
 http://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
 
-**3) python importerror dlopen symbol not found**
+3) `ImportError: dlopen(/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload/_io.so, 2): Symbol not found: __PyCodecInfo_GetIncrementalDecoder`
 
 Possible issue due to installing Python using `brew`.
 
