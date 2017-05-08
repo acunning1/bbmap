@@ -36,7 +36,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
 
-If no Python (or old version) is found, [install/update](https://www.python.org/downloads/mac-osx/) using the Python installer at https://www.python.org/downloads/mac-ox/.
+If no Python (or old version) is found, [install/update](https://www.python.org/downloads/mac-osx/) using the Python installer at https://www.python.org/downloads/mac-osx/.
 
 ### Step 2 - Install required Python libraries:
 
