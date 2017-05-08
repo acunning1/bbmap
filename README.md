@@ -21,7 +21,7 @@ A CLI utility written in Python to retrieve demographic data for a specified set
 ## Installation
 
 - **[Step 1 - Verify Python installation requirement](https://github.com/acunning1/bbmap#step-1---verify-python-installation-requirement)**
-- **[Step 2 - Install required Python libraries]https://github.com/acunning1/bbmap#step-2---install-required-python-libraries**
+- **[Step 2 - Install required Python libraries](https://github.com/acunning1/bbmap#step-2---install-required-python-libraries)**
 - **[Step 3 - Clone or download repository](https://github.com/acunning1/bbmap#step-3---clone-or-download-repository)**
 
 ### Step 1 - Verify Python installation requirement:
