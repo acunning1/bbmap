@@ -1,10 +1,19 @@
+# bbmap.py
+# Broadbandmap.gov API requester
+#
+# Created by Andy Cunningham
+# 5/8/17
+
+# Import libraries
 import argparse
 import requests
 import csv
 import numpy as math
 
+# Create IncomeRequester object
 class IncomeRequester:
 
+# Collect input from CLI
     def get_input(self):
         parser = argparse.ArgumentParser()
         parser.add_argument("states", nargs='?', help="comma separated list of US states (no whitespace)", default="check_string_for_empty", type=lambda x: x.split(','))
@@ -14,6 +23,7 @@ class IncomeRequester:
         args = parser.parse_args()
         return args
 
+# Validate input
     def validate_input(self, arg_input):
         states = []
         valid_states = [
@@ -43,6 +53,7 @@ class IncomeRequester:
                 states.append(s)
         return states
 
+# Using validated input, request FIPS id list
     def get_fips(self, state_input):
         fips = []
         url1 = 'https://www.broadbandmap.gov/broadbandmap/census/state/'
@@ -53,6 +64,7 @@ class IncomeRequester:
         fip_list = ','.join(map(str, fips))
         return fip_list
 
+# Using FIPs id list, request state income data
     def get_data(self, fip_input):
         result = []
         url2 = 'https://www.broadbandmap.gov/broadbandmap/demographic/jun2014/state/ids/'
@@ -62,6 +74,7 @@ class IncomeRequester:
             result.append(x)
         return result
 
+# If -c or -csv, export to CSV
     def export_csv(self, result_input):
         f = csv.writer(open("incomes.csv", "wb+"))
         f.writerow(["geographyName", "population", "households", "incomeBelowPoverty", "medianIncome"])
@@ -73,6 +86,7 @@ class IncomeRequester:
                         result_input[idx]['medianIncome']])
         return
 
+# If no option, -a, or --avg, perform weighted average
     def weighted_average(self, result_input):
         income_avg = []
         households_weight = []
